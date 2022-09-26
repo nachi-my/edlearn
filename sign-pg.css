@@ -1,0 +1,125 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(log-bg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    margin: 0px;
+
+}
+/* .log-pg img{
+    height:150px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 20px; */
+    /* margin-bottom: 10px; */
+    /* float: center; */
+    /* background-color: violet; */
+/* } */
+/* .form{ */
+    
+    /* background-color: tomato; */
+
+
+.log-pg{
+    width: 500px;
+    padding: 0 0 0 0;
+    height: 780px;
+    margin: auto;
+    /* margin-top: 30px; */
+    /* margin-left: 80px; */
+    float: center;
+    /* background-color: aqua; */
+}
+.log-form{
+    position: relative;
+    /* z-index: 1; */
+    /* background-color: brown; */
+    background:none;
+    max-width: 360px;
+    margin: 100px auto 0px;
+    padding: 45px;
+    text-align: center;
+    /* font-size: 30px; */
+ }
+ .lb{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family:'Fira Sans Condensed', sans-serif ;
+    text-transform: uppercase;
+    /* color: #ffffff; */
+    font-size: 20px;
+    color: #dae6fc ;
+    margin-bottom:10px ;
+    /* margin-inline-start: 0px; */
+ }
+ 
+ 
+.log-pg input{
+    font-family:'Fira Sans Condensed', sans-serif;
+    outline: 1;
+    background:#f2f2f2 ;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding:15px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.form .btn{
+    font-family:'Fira Sans Condensed', sans-serif ;
+    text-transform: uppercase;
+    outline: none;
+    background: #4c6faf;
+    width:100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.form .btn:hover, .form .btn:active{
+    background-color: #1b2538 ;
+}
+.form .msg{
+    margin: 15px 0 0;
+    color: rgb(86, 111, 133);
+    font-size: 22px;
+}
+.form .msg a{
+    color: #dae6fc ;
+    text-decoration: none; 
+}
+  
+.tc{
+    /* background-color: tomato; */
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: 0px; */
+    /* justify-content: space-between; */
+    /* display: -webkit-box; */
+} 
+.tc input{
+ /* float: left; */
+ width: 22px;
+ margin-top: 5px;
+ margin-right: 5px;
+ margin-left: 0px;
+
+    
+}
+.tc p{
+    /* background-color: yellow; */
+    margin: 0px;
+    color: #f2f2f2 ;
+    font-size: 19px;
+}
+    

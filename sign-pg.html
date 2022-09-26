@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" href="sign-pg.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+	<div class="log-pg">
+		<!-- <img src="nlogo1.png"> -->
+		<div class="form">
+
+			<form class="log-form">
+				<input type="text" placeholder="First Name" id="fname">
+				<input type="text" placeholder="Last Name" id="lname">
+				<!-- <input type="radio" placeholder="male" id="d"> -->
+				<div class="lb">
+					<input type="radio" id="male" name="gender" value="male" >
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female" >
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other" >
+					<label for="other">Other</label>
+				</div>
+				<input type="text" placeholder="user-name" id="uname">
+				<input type="text" placeholder="email" id="email">
+				<input type="text" placeholder="password" id="pwd1">
+				<input type="text" placeholder="confirm password" id="pwd2">
+				<!-- <button> Login </button> -->
+				<!-- <input type="submit" value="Login" class="btn" onClick="login()" /> -->
+				<input type="submit" value="Sign Up"  onclick="signup()" onclick="chkrbtn()" class="btn" />
+				<div class="tc">
+					<input type="checkbox" id="chk">
+					<p>I accept the <a href="#"> Terms of Use </a> & <a href="#"> Privacy Policy </a> </p>
+				</div>
+				<p class="msg"> Already have a Account ? <a href="log-pg.html"> Login </a></p>
+			</form>
+		</div>
+	</div>
+	<script>
+		function signup() {
+
+			var fname = document.getElementById("fname").value;
+			var lname = document.getElementById("lname").value;
+			var uname = document.getElementById("uname").value;
+			var email = document.getElementById("email").value;
+			var pwd = document.getElementById("pwd1").value;
+			var cpwd = document.getElementById("pwd2").value;
+
+			//email id expression code
+			var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+			var letters = /^[A-Za-z]+$/;
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+			if (fname == '') {
+				alert('Please enter your first name');
+			}
+			else if (lname == '') {
+				alert('Please enter your last name');
+			}
+			else if (!letters.test(fname)) {
+				alert('Name field required only alphabet characters');
+			}
+			else if (!letters.test(lname)) {
+				alert('Name field required only alphabet characters');
+			}
+			else if (uname == '') {
+				alert('Please enter your user name');
+			}
+			else if (!letters.test(uname)) {
+				alert('User name field required only alphabet characters');
+			}
+			else if (email == '') {
+				alert('Please enter your user email id');
+			}
+			else if (!filter.test(email)) {
+				alert('Invalid email');
+			}
+			else if (pwd == '') {
+				alert('Please enter Password');
+			}
+			else if (cpwd == '') {
+				alert('Enter Confirm Password');
+			}
+			else if (!pwd_expression.test(pwd)) {
+				alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+			}
+			else if (pwd != cpwd) {
+				alert('Password not Matched');
+			}
+			else if (document.getElementById("pwd2").value.length < 6) {
+				alert('Password minimum length is 6');
+			}
+			else if (document.getElementById("pwd2").value.length > 12) {
+				alert('Password max length is 12');
+			}
+			else {
+				alert('Thank you for Sign Up ');
+			}
+		}
+		function chkrbtn() {
+			var male = document.getElementById("male")
+			var female = document.getElementById("female")
+			var other = document.getElementById("other")
+			if (male.checked || female.checked || other.checked) {
+			}
+			else {
+				alert("Please select atleast one gender")
+			}
+		}
+
+	</script>
+</body>
+
+</html>

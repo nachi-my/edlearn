@@ -1,0 +1,100 @@
+
+ body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(log-bg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    margin: 0px;
+
+}
+.log-pg img{
+    height:150px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+.log-pg{
+    width: 500px;
+    padding: 0 0 0 0;
+    margin: auto;
+    /* margin-left: 80px; */
+    float: center;
+    /* background-color: aqua; */
+}
+#txt{
+    /* background-color: #4c6faf; */
+    background-image: linear-gradient(to bottom right,#4c6faf,#070f1d);
+  float: right;
+  width: 600px;
+  height: 780px;
+/* margin-inline-start: 0%; */
+    z-index: 1;
+    font-family:'Merriweather Sans', sans-serif ;
+    color: white;
+    font-size: 60px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height:800px; */
+    
+}
+.log-form{
+    position: relative;
+    z-index: 1;
+    background:none;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    /* font-size: 30px; */
+ }
+.log-pg input{
+    font-family:'Fira Sans Condensed', sans-serif;
+    outline: 1;
+    background:#f2f2f2 ;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding:15px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.form .btn{
+    font-family:'Fira Sans Condensed', sans-serif ;
+    text-transform: uppercase;
+    outline: none;
+    background: #4c6faf;
+    width:100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.form .btn:hover, .form .btn:active{
+    background-color: #1b2538 ;
+}
+.form .msg{
+    margin: 15px 0 0;
+    color: rgb(86, 111, 133);
+    font-size: 22px;
+}
+.form .msg a{
+    color: #dae6fc ;
+    text-decoration: none; 
+}
+ /* form.registration-form{ 
+    display: none; 
+} 
+  */
+  #validation{
+      /* background-color: blue; */
+      color: red;
+  }
+  #validation1{
+      color: red;
+  }

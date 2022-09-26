@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="log-pg.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="log-pg">
+        <img src="nlogo1.png">
+        <div class="form">
+
+            <form class="log-form">
+                
+                <input type="text" placeholder="user-name/email" id="email" >
+                <div id="validation">
+                </div>
+                <input type="password" placeholder="password" id="pwd1" >
+                <div id="valid">
+                </div>
+                <!-- <button> Login </button> -->
+                <input type="submit" value="Login" class="btn" onclick="login()" />
+                <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+                <p class="msg"> Do not have a Account ? <a href="sign-pg.html"> Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        function login() {
+            var email = document.getElementById("email").value;
+            var pwd = document.getElementById("pwd1").value;
+            if (email == '') {
+                document.getElementById("validation").innerHTML = "please enter user name."
+            }
+            else if (pwd1 == '') {
+                document.getElementById("valid").innerHTML = "enter the password"
+            }
+            else {
+                // document.getElementById("div-validation").innerHTML="login successful"
+                alert("login is successful")
+            }
+        }
+        function clearFunc() {
+            document.getElementById("email").value = "";
+            document.getElementById("pwd1").value = "";
+        }
+    </script>
+</body>
+
+</html>
